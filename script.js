@@ -1,6 +1,6 @@
 // asynchronous js 
 
-/*
+
 const third = () =>{
   setTimeout(() =>{
 
@@ -64,9 +64,9 @@ const getRecipe = ()=>{
 getRecipe();
 
 
-*/
 
-/*
+
+
 // Promises
 
 const getIDs = new Promise((resolve,reject)=>{
@@ -247,7 +247,7 @@ Promise.all(urls.map(url=>{
 
 
 
-/*
+
 // async function 
 
 
@@ -341,7 +341,7 @@ getData();
 
 
 
-*/
+
 
 //  for await of feature 
 
@@ -355,31 +355,31 @@ const urls = [
 
 ]
 
-// const getData = async ()=>{
-//   try{
+const getData = async ()=>{
+  try{
 
 
-//     const [users,posts,todos,comments,photos] = await Promise.all(urls.map(url =>{
+    const [users,posts,todos,comments,photos] = await Promise.all(urls.map(url =>{
   
-//     return   fetch(url).then(response => response.json())
-//     }
-//     ))
-//   // throw Error
-//     console.log('users', users[0].name);
-//     console.log('posts', posts);
-//     console.log('todos', todos);
-//     console.log('comments', comments);
-//     console.log('photos', photos);
-//   }
-//   catch (err){
-//     console.log('🙃', err);
-//   }
-//   finally{
-//     console.log('testing stuff');
-//   }
+    return   fetch(url).then(response => response.json())
+    }
+    ))
+  // throw Error
+    console.log('users', users[0].name);
+    console.log('posts', posts);
+    console.log('todos', todos);
+    console.log('comments', comments);
+    console.log('photos', photos);
+  }
+  catch (err){
+    console.log('🙃', err);
+  }
+  finally{
+    console.log('testing stuff');
+  }
 
-//   }
-// getData(); 
+  }
+getData(); 
 
 // for await of 
 const getData2 = async ()=>{
